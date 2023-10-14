@@ -1,0 +1,42 @@
+/* Common styles for the slider */
+.slider-container {
+    width: 100%; /* Full width */
+    overflow: hidden;
+    position: relative;
+}
+
+.slider-wrapper {
+    display: flex;
+    transition: transform 0.3s ease;
+}
+
+.slide {
+    width: 100%; /* Full width */
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+/* Styles for large screens (greater than 768px) */
+@media screen and (min-width: 768px) {
+    .slider-container {
+        max-width: 768px; /* Limit to 768px wide on larger screens */
+        margin: 0 auto; /* Center the slider */
+    }
+
+    .slider-btn {
+        display: none; /* Hide navigation buttons on larger screens */
+    }
+}
+
+/* Styles for small screens (less than 768px) */
+@media screen and (max-width: 767px) {
+    .slider-btn {
+        display: none; /* Hide navigation buttons on smaller screens */
+    }
+}
+
+/* Set a fixed width for images and auto height to maintain aspect ratio */
+.slide img {
+    width: auto; /* Set to 100% to maintain full width */
+    height: auto; /* Automatically adjust the height to maintain aspect ratio */
+}
