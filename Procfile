@@ -1,1 +1,1 @@
-web: gunicorn my_project.wsgi --log-file -
+web: gunicorn form_creator_project.wsgi --log-file -
