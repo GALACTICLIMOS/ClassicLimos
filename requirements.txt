@@ -1,0 +1,14 @@
+asgiref
+boto3
+botocore
+Django
+django-filter
+django-storages
+gunicorn
+jmespath
+s3transfer
+six
+pillow
+sqlparse
+urllib3
+whitenoise
