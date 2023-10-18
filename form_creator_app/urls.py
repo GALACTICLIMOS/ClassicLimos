@@ -7,6 +7,15 @@ urlpatterns = [
     
     path('reservation', views.reservationform, name='reservation'),
     path('fleet', views.fleet, name='fleet'),
+    path('limo-hir-eservices', views.limohireservices, name='limo-hire-services'),
     path('Get_Quick_Quote', views.Get_Quick_Quote_method , name = "Get_Quick_Quote"),
+    
+    path('KIDSLIMOPARTIES', views.KIDSLIMOPARTIES, name='KIDSLIMOPARTIES'),
+    path('PROMLIMO', views.PROMLIMO, name='PROMLIMO'),
+    path('ROYALASCOTLIMOHIRE', views.ROYALASCOTLIMOHIRE, name='ROYALASCOTLIMOHIRE'),
+    
+    path('SPECIALOCCASIONLIMOHIRE', views.SPECIALOCCASIONLIMOHIRE, name='SPECIALOCCASIONLIMOHIRE'),
+    path('weddingcarhire', views.weddingcarhire, name='weddingcarhire'),
+    path('limo-hire-services', views.limohireservices, name='limo-hire-services'),
 ]
 

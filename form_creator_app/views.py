@@ -3,10 +3,22 @@ from django.http import HttpResponse
 from .models import *
 def index(request):
     return render(request, 'index.html')
+def limohireservices(request):
+    return render(request, 'limo-hire-services.html')
 
 
 def fleet(request):
     return render(request, 'Fleet.html')
+def KIDSLIMOPARTIES(request):
+    return render(request, 'KIDSLIMOPARTIES.html')
+def PROMLIMO(request):
+    return render(request, 'PROMLIMO.html')
+def ROYALASCOTLIMOHIRE(request):
+    return render(request, 'ROYAL_ASCOT_LIMO_HIRE.html')
+def SPECIALOCCASIONLIMOHIRE(request):
+    return render(request, 'SPECIAL_OCCASION_LIMO HIRE.html')
+def weddingcarhire(request):
+    return render(request, 'wedding-car-hire.html')
 
 
 
