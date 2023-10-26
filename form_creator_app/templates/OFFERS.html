@@ -44,14 +44,36 @@
         <link rel="stylesheet" href="{% static 'css/normalize.css' %}">
         <link rel="stylesheet" href="{% static 'style.css' %}">
         <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+
+	    <style>
+			.newss{
+				position: relative;
+				display: inline-block;
+				overflow: hidden;
+				border: 8px solid transparent; /* Add a transparent border */
+				border-radius: 50%; /* Make the element circular */
+				transition: border-color 0.3s; /* Add a transition effect for smooth color change */
+				width: 75%;
+				
+			}
+	
+			.newss img {
+				max-width: 100%;
+				height: auto;
+				display: block;
+				height: 290px;
+			}
+	
+			.newss:hover {
+				border-color: black transparent; /* Change border color when hovering */
+			}
+			.p1{
+				font-family: "Times New Roman", Times, serif;
+				color:white;
+			  }
+		</style>	
 		
     </head>
-	<style>
-		.p1{
-			font-family: "Times New Roman", Times, serif;
-			color:white;
-		  }
-	</style>
     <body>
 	
 		<!-- Preloader -->
@@ -163,6 +185,7 @@
 											<li><a href="QUOTES" style="color: white; "  >QUOTES</a></li>
 											<li><a href="OFFERS" style="color: white; "  >OFFERS</a></li>
 
+
 										</ul>
 									</nav>
 								</div>
@@ -182,6 +205,8 @@
 			<div class="hero-slider">
 				<!-- Start Single Slider -->
 				<div class="single-slider"  style="background-image: url('{% static 'img\slid\slidwer1.png' %}')">
+					
+					
 					<div class="container">
 						<div class="row">
 							<div class="col-lg-7">
@@ -212,25 +237,64 @@
 				</div>
 				<!-- Start End Slider -->
 				<!-- Start Single Slider -->
-				<div class="single-slider" style="background-image:url('{% static "img/slider3.jpg" %}')">
-					<div class="container">
-						<div class="row">
-							<div class="col-lg-7">
-								<div class="text">
-									<h1>We Provide <span>Travel</span> Services That You Can <span>Trust!</span></h1>
-									
-									
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- End Single Slider -->
+	
 			</div>
 		</section>
 		<!--/ End Slider Area -->
 		
-				
+		<!-- Start Appointment -->
+		<section class="appointment">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="section-title">
+							<h2 class="p1">"Exclusive Limo Hire Offers for Special Occasions by VIP CLASS LIMO'S."</h2>
+							<p>Seize the opportunity to secure a special discount from VIP CLASS LIMO'S while it lasts. Our special offers have a limited availability and are provided on a "first come, first served" basis. These limousine hire offers are highly sought after by our customers, so prompt action is advisable if you wish to benefit from them. If you happened to miss out on any of our previous offers, we apologize for any inconvenience. To ensure you stay updated and never miss out again, consider following US Limos on Facebook and Twitter to be among the first to receive news about our upcoming limousine hire special offers.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-7 col-md-12 col-12" style="background-color: rgb(34, 34, 34); border-radius: 19px;padding-bottom: 15px">
+						<div style="border-bottom: 2px solid white; padding-bottom: 15px;padding-top: 15px;">
+							<h1 class="p1">Valentines Day Limo Hire Offer</h1>
+						</div>
+		
+						<div class="appointment-image" style="">
+							<img src="{% static 'img/aboutcompany1.jpg' %}" alt="#">
+						</div>
+		
+						<div>
+							<h1 class="p1">	
+								A Christmas Carol 2023 LIMOUSINE SPECIAL OFFER</h1>
+							<p>This offer is conditional. Follow us on Facebook to ensure you don't miss our next great offer.</p>
+						</div>
+						<div class="form-group login-btn">
+						<a href="home">	<button class="btn" type="submit">Get Quick Quote</button></a>
+						</div>
+					</div>
+					<div class="col-lg-1 col-md-12"></div>
+					<div class="col-lg-4 col-md-12">
+						<p style="text-align: justify;">
+							<h3 class="p1" style="color:black;">LIMOS FOR ALL OCCASIONS</h3>
+							VIP CLASS LIMO'S serve various events, such as weddings, proms, kids' parties, hen/stag nights, and exclusive sports events like Royal Ascot. Visit our Services or specific occasion pages for more details.
+						</p>
+						<div class="newss">
+							<img src="{% static 'img/WEDDING_CAR_ HIRE.jpg' %}" style="" alt="#">
+						</div>
+					
+						<div class="newss">
+							<img src="{% static 'img/WEDDING_CAR_ HIRE.jpg' %}"  alt="#">
+						</div>
+						<div class="newss">
+							<img src="{% static 'img/WEDDING_CAR_ HIRE.jpg' %}"  alt="#">
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</section>
+		
+		
 
 
 				
@@ -239,21 +303,6 @@
 		
 
 		<!-- Start Feautes -->
-		<section class="Feautes section" style="background-color: #222222;">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-lg-12">
-						<div class="section-title mt-5">
-							<h4 class="textsetting p1" style="color: white;" >VIP CLASS LIMO'S HIRE: VIP CLASS LIMO'S HAVE PROBABLY<br> THE BEST RANGE OF CHAUFFEUR-DRIVEN LUXURY LIMOS IN THE US</h2><br><br><br>
-							
-							<h3 class="p1" style="color: white;">VIP CLASS LIMO'S has teamed up with Kent-based Wild Stretch Limos – owners<br> of one of the largest Hummer VIP CLASS LIMO'S hire fleets in the US today!</h3><br><br><br>
-							<h4 class="p1" style="color: white;">CALL TO BOOK VIP CLASS LIMO'S HIRE ON <span style="color:white;"> +1(888)383-3911 </span><br> OR FOLLOW US ON FACEBOOK FOR VIP CLASS LIMO'S HIRE OFFERS </h4>
-						</div>
-					</div>
-				</div>
-				
-			</div>
-		</section>
 		<!--/ End Feautes -->
 
 
@@ -262,66 +311,7 @@
 		<!-- Start Appointment -->
 		
 		
-		<section class="blog section mt-2" id="blog" style="background-color: #222222;">
-			<div class="container">
-				
-				<div class="row">
-					<div class="col-lg-4 col-md-6 col-12">
-						<!-- Single Blog -->
-						<div class="single-news" >
-							<div class="news-head" >
-								<img src="{% static 'img/WEDDING_CAR_ HIRE.jpg' %}" style="height:350px;" alt="#">
-							</div>
-							<div class="news-body" >
-								<div class="news-content" style="background-color: #222222;">
-									
-									<h2><a href="" style="color: #223194;" >WEDDING CAR HIRE</a></h2>
-									<p class="text" style="color: white; text-align: justify;" >We offer an exquisite fleet of luxury chauffeured wedding cars, accompanied by a selection of 8 to 16-passenger limousines designed to complement a diverse range of wedding styles, spanning from modern to traditional themes.</p><br>
-									{% comment %} <div class="date">22 Aug, 2020</div> {% endcomment %}
-								</div>
-							</div>
-						</div>
-						<!-- End Single Blog -->
-					</div>
-					<div class="col-lg-4 col-md-6 col-12">
-						<!-- Single Blog -->
-						<div class="single-news">
-							<div class="news-head">
-								<img src="https://uk-limos.com/wp-content/uploads/2013/08/Prom-Limo340.jpg" alt="#">
-							</div>
-							<div class="news-body">
-								<div class="news-content" style="background-color: #222222;">
-									
-									<h2><a  style="color: #223194;" >SCHOOL PROM LIMO HIRE</a></h2>
-									<p class="text" style="color: white; text-align: justify;">If you seek an exceptional and unforgettable means to commemorate your school prom or graduation, your search ends with a chauffeur-driven limousine from VIP CLASS LIMO'S.</p><br>
-									{% comment %} <div class="date">05 Jan, 2020</div> {% endcomment %}
-								</div>
-							</div>
-						</div>
-						<!-- End Single Blog -->
-					</div>
-					<div class="col-lg-4 col-md-6 col-12">
-						<!-- Single Blog -->
-						<div class="single-news">
-							<div class="news-head">
-								<img src="{% static 'img/SPECIAL_OCCASION LIMO_ HIRE.jpg' %}" style="height:350px;" alt="#">
-							</div>
-							<div class="news-body">
-								<div class="news-content" style="background-color: #222222;">
-									
-									<h2><a  style="color: #223194;" >SPECIAL OCCASION LIMO HIRE</a></h2>
-									<p class="text" style="color: white; text-align: justify;">Irrespective of the occasion, be it birthdays, anniversaries, or any other special event, the chauffeur-driven luxury cars and stretch limousines provided by VIP CLASS LIMO'S will surpass your every travel expectation.</p><br>
-									{% comment %} <div class="date">05 Jan, 2020</div> {% endcomment %}
-								</div>
-							</div>
-						</div>
-						<!-- End Single Blog -->
-					</div>
-
-					
-				</div>
-			</div>
-		</section>
+		
 		<!-- End Appointment -->
 		<section class="appointment">
 			

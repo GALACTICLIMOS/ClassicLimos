@@ -11,7 +11,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		
 		<!-- Title -->
-        <title>VIP Class</title>
+		<title>VIP CLASS LIMO'S</title>
 		
 		<!-- Favicon -->
         <link rel="icon" width: 10px; height:10px; href="{% static 'img/logo.png' %}">
@@ -89,7 +89,7 @@
 			 	
 									
 									<a  href=""><i style="margin-right: 10px; color:white;" class="fab fa-instagram" style="color:white;"></i></a>	
-									<a href="https://www.linkedin.com/company/galactic-limo-s-llc/"><i style="margin-right: 10px; color:white;" class="fab fa-linkedin" style="color:white;"></i></a>	 
+									<a href="vip_limo_linkedin"><i style="margin-right: 10px; color:white;" class="fab fa-linkedin" style="color:white;"></i></a>	 
 									{% comment %} <li><a href="#"><i class="icofont-twitter" style="color: white"></i></a></li>
 									<li><a href="#"><i class="icofont-vimeo" style="color: white"></i></a></li> {% endcomment %}
 									
@@ -142,7 +142,7 @@
 												
 												<i class="icofont-rounded-down"></i></a>
 												<ul class="dropdown">
-													<li><a href="fleet">Limo Hire FLEET</a></li>
+													 <li><a href="fleet">LIMO HIRE FLEET</a></li>
 													<li><a href="">4 SEAT LUXURY CARS</a></li>
 													<li><a href="">8 SEAT STRETCH LIMOS</a></li>
 													<li><a href="">13-16 SEAT STRETCH LIMOS</a></li>
@@ -153,10 +153,10 @@
 
 
 										
-											<li><a href="reservation" style="color: white; "  >Reservation</a></li>
-											<li><a href="" style="color: white; "  >CONTACT</a></li>
-											<li><a href="" style="color: white; "  >QUOTES</a></li>
-											<li><a href="" style="color: white; "  >OFFERS</a></li>
+											<li><a href="reservation" style="color: white; "  >RESERVATION</a></li>
+											 <li><a href="CONTACT" style="color: white; "  >CONTACT US</a></li>
+											<li><a href="QUOTES" style="color: white; "  >QUOTES</a></li>
+											<li><a href="OFFERS" style="color: white; "  >OFFERS</a></li>
 
 
 										</ul>
@@ -177,12 +177,12 @@
 		<section class="slider">
 			<div class="hero-slider">
 				<!-- Start Single Slider -->
-				<div class="single-slider" style="background-image: url('https://avatars.mds.yandex.net/i?id=42451a4f197c16567dc17ae5a3eb1a635478072e-9624812-images-thumbs&n=13')">
+				<div class="single-slider" style="background-image: url('{% static 'img\slid\slidwer1.png' %}')">
 					<div class="container">
 						<div class="row">
 							<div class="col-lg-7">
 								<div class="text">
-									{% comment %} <h3 style="color:blue;" >On your wedding day, nothing but the finest will suffice. Indulge in the opulence of champagne service and the regal red carpet treatment as you ride in a chauffeur-driven luxury wedding car provided by VIP CLASSIC LIMO'S. Cherish the moment with champagne service and chauffeur-driven elegance.</h3> {% endcomment %}
+									{% comment %} <h4 style="color:blue;" >On your wedding day, nothing but the finest will suffice. Indulge in the opulence of champagne service and the regal red carpet treatment as you ride in a chauffeur-driven luxury wedding car provided by VIP CLASSIC LIMO'S. Cherish the moment with champagne service and chauffeur-driven elegance.</h4> {% endcomment %}
 									{% comment %} <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nisl pellentesque, faucibus libero eu, gravida quam. </p> {% endcomment %}
 									
 								</div>
@@ -247,7 +247,7 @@
 									</h4>
 									
 									<!-- Form -->
-									<form action="reservation" class="form" method = 'POST' >
+									<form action="" class="form" method = 'POST' >
 										{% csrf_token %}
 										<div class="row">
 											<div class="col-lg-4">
@@ -287,7 +287,7 @@
 											</div>
 											<div class="col-lg-4">
 												<div class="form-group">
-													<input type="text" name="ZipCode" placeholder="Zip Code" requiredredredredred="">
+													<input type="text" name="Zipcode" placeholder="Zip Code" requiredredredredred="">
 												</div>
 											</div>
 											<div class="col-lg-4">
@@ -322,7 +322,7 @@
 											</div>
 											<div class="col-lg-12">
 												<div class="form-group">
-													<textarea name="Message" placeholder="Do You Have Any Other Routing Request" requiredredredredred=""></textarea>
+													<textarea name="RoutingRequest" placeholder="Do You Have Any Other Routing Request" requiredredredredred=""></textarea>
 												</div>
 											</div>
 	
@@ -388,16 +388,16 @@
 								<!-- <div class="single-info"> -->
 									<!-- <i class="icofont icofont-ui-call"></i> -->
 									<div class="content mt-3">
-										<h3 style="color:black;">VIP CLASS LIMO</h3>
-										<p style="  text-align: justify;">Thank you for reserving VIP CLASS LIMO for quality assurance please review your reservation for proper dates, addresses and times. It is up to you to inform us of any corrections this is not VIP CLASS LIMO responsibility. In case of any question call us at (888)383-3911. 100% non-refundable payment is expected when the reservation is made. All payments are non-refundable and non-transferable in any case of cancellation. Cancellations must be submitted in writing, via email. Remaining payments Must be Paid 30 days before reservation date and will be charged on card on file automatically. Reply to this email to constitute your acceptance of these terms via email. Cancellation requests must be done in writing via email to info@Galacticlimo.com</p>
+										<h4 style="color:black;">VIP CLASS LIMO</h4>
+										<p style="  text-align: justify;">Thank you for reserving VIP CLASS LIMO for quality assurance please review your reservation for proper dates, addresses and times. It is up to you to inform us of any corrections this is not VIP CLASS LIMO responsibility. In case of any question call us at (888)383-3911. 100% non-refundable payment is expected when the reservation is made. All payments are non-refundable and non-transferable in any case of cancellation. Cancellations must be submitted in writing, via email. Remaining payments Must be Paid 30 days before reservation date and will be charged on card on file automatically. Reply to this email to constitute your acceptance of these terms via email. Cancellation requests must be done in writing via email to Info@vipclasslimos.com</p>
 									</div>
 									<div class="content mt-3">
-										<h3 style="color:black;">Overtime Rates:</h3>
+										<h4 style="color:black;">Overtime Rates</h4>
 										<p style="  text-align: justify;">10 Minute Grace Period Is Allowed. All overtime will be charged to the same credit card. we use for booking. Overtime is charged by the hour not prorated per minute and will be charged same rate as per signed contract per hour rates at the time of booking. Credit card onfile will be charged, prior to the event date, for overtime and damages deposit. Security deposit will be refunded upon completion of the trip after inspection of the vehicle if there is no overtime and damages refund will be processed in 3 to 4 working days. In the event we have another engagement after your service, there is no guarantee that VIP CLASS LIMO Will be available for overtime hours beyond your contracted time block. We reserve the right to conclude services at any moment once the contractual period has expired. We do not intend to be tardy on your service help us to be on time for our next Trip. If you feel you need more time, please book in advance and we will gladly accommodate to our best ability. Payment Acceptance</p>
 										<p>We accept all major Credit Cards and Cash payments. If paying by check, it must clear 7 days before your services date . Cardholder Acceptance: I read the contract and I accept the VIP CLASS LIMO terms and conditions, and I understand All payments are non-refundable in any case of cancelation.</p>
 									</div>
 									<div class="content mt-3">
-										<h3 style="color:black;">Traffic Congestion:</h3>
+										<h4 style="color:black;">Traffic Congestion</h4>
 										<p style="  text-align: justify;">Stops and Addresses Listed on your contract all addresses must be provided in advance,
 											VIP CLASS LIMO will not be held responsible for time lost mapping new addresses
 											or trying to find landmarks. Please list all addresses in advance to ensure quality
@@ -411,7 +411,7 @@
 								
 									</div>
 									<div class="content mt-3">
-										<h3 style="color:black;">Weather Policy</h3>
+										<h4 style="color:black;">Weather Policy</h4>
 										<p style="  text-align: justify;">VIP CLASS LIMO rentals reserves the right to suspend service if weather is inclement
 											and could jeopardize safety. In these instances, a rain & Snow date will be allowed for
 											the customer to choose a future date. All deposits will be Hold for future date.</p>
@@ -419,7 +419,7 @@
 									</div>
 							
 									<div class="content mt-3">
-										<h3 style="color:black;">VEHICLE DAMAGE POLICY</h3>
+										<h4 style="color:black;">VEHICLE DAMAGE POLICY</h4>
 										<p style="  text-align: justify;">The Agreeing guarantor of this reservation accepts full financial liability for any physical
 											damage or breakage of crystal, switches, burn marks, stains etc. Escape Hatches are for
 											emergencies only. VIP CLASS LIMO rental reserves the right to terminate service with
@@ -430,7 +430,7 @@
 								
 									</div>
 									<div class="content mt-3">
-										<h3 style="color:black;">SMOKING/ALCOHOL POLICY</h3>
+										<h4 style="color:black;">SMOKING/ALCOHOL POLICY</h4>
 										<p style="  text-align: justify;">Our Vehicles are non-smoking. A $ 250.00 charge per occurrence will apply. If needed, your driver
 											will pull over to allow passengers to smoke outside Limousine. Illegal use of drugs is prohibited
 											in our limousines and can terminate ride at no refund to customer. Alcohol consumption in our
@@ -440,13 +440,13 @@
 								
 									</div>
 									<div class="content mt-3">
-										<h3 style="color:black;">PASSENGER COUNT</h3>
+										<h4 style="color:black;">PASSENGER COUNT</h4>
 										<p style="  text-align: justify;">No chauffeur will operate a vehicle with more passengers than the vehicle is rated to accommodate.
 											Please ensure the vehicle you are renting will accommodate your passenger count.</p>
 								
 									</div>
 									<div class="content mt-3">
-										<h3 style="color:black;">GENERAL ADDITIONAL POLICY</h3>
+										<h4 style="color:black;">GENERAL ADDITIONAL POLICY</h4>
 										<p style="  text-align: justify;">If for any reason the firm is unable to perform the service as contract, its maximum liability shall be limited to a full refund of any monies paid by customers toward their rental or a credit towards future service. In rare instances we reserve the right to substitute vehicles in the event of mechanical failure. In the event of mechanical failure, VIP CLASS LIMO rentals reserves the right to make a comparable substitution. In the event we have advance notice of a vehicle being taken out of service, we will contact you and advise you of available options. If a vehicle becomes disabled in the route to your service, we will send a comparable substitution at no extra charge to you. It is agreed that no person shall cause any contracted vehicle to be overloaded past the passenger capacity of any contracted vehicle. It is further understood that all passengers should discharge themselves from the vehicle orderly and should check for personal items before departing the contracted vehicle. VIP CLASS LIMO shall not be responsible for any items left in a contracted vehicle. It is your responsibility to check the vehicle for personal items. The contracting person agrees that all claims and or complaints must be submitted in writing to VIP CLASS LIMO rentals no later than 7days after the scheduled event. Moreover, should it be deemed necessary for VIP CLASS LIMO to enlist attorneys or collection agencies to assist in collection of monies due for non-payment of services or a breach of this contract, it shall be at the expense of the contracted event. Failure to comply with any or all terms and conditions of this contract may result in termination of your ride, forfeiture of all payments and deposits the contracted event acknowledges that upon, reading and understanding the terms and conditions of this contract, hereby agrees by signing this contract. Chauffeurs have the authority to determine if vehicles can safely make tight turns or enter narrow driveways, in such instance’s clients may need to walk to or from the vehicle. For your safety, walking or standing in the vehicle is prohibited while in motion. VIP CLASS LIMO will not be held liable for injury sustained if limousine must come to an immediate stop.</p>
 								
 									</div>
