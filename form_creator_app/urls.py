@@ -27,6 +27,7 @@ urlpatterns = [
     path('QUOTES', views.QUOTES, name='QUOTES'),
     path('CONTACT', views.CONTACT, name='CONTACT'),
     path('Messagesend', views.Message_send, name='CONTACT'),
+    path('send_email', views.send_email, name='send_email'),
     
     
     
