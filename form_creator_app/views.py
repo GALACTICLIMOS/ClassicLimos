@@ -101,7 +101,7 @@ def send_godaddyMAil_reservation_form(data):
     msg = MIMEMultipart()
     msg['Subject'] = "Reservation Request!"
     msg['From'] = "Info@vipclasslimos.com"
-    msg['To'] = "ranaumaradvocate521@gmail.com"
+    msg['To'] = "Info@vipclasslimos.com"
     # msg['To'] = "asif5955iqbal@yahoo.com"
 
     # Add the logo to the message object
@@ -370,7 +370,7 @@ def send_godaddyMAil_quotation(data):
         # msg.set_content("Order details are as following:\n"+str(data)+'\n Thank you.')
         msg['Subject'] = "Quote Request!"
         msg['From'] = "Info@vipclasslimos.com"
-        msg['To'] = "ranaumaradvocate521@gmail.com"
+        msg['To'] = "Info@vipclasslimos.com"
 
         # Connect to the SMTP server
         smtp_server = "smtpout.secureserver.net"
@@ -418,7 +418,7 @@ def send_email1234(request):
         msg = MIMEMultipart()
         msg['Subject'] = "Reservation Request!"
         msg['From'] = "Info@vipclasslimos.com"
-        msg['To'] = "ranaumaradvocate521@gmail.com"
+        msg['To'] = "Info@vipclasslimos.com"
         first_name = request.POST['First_Name']
         last_name  = request.POST['Last_Name']
         phone_num  = request.POST['phone']
@@ -579,7 +579,7 @@ def send_email(request):
             msg = MIMEMultipart()
             msg['Subject'] = "Reservation Request!"
             msg['From'] = "Info@vipclasslimos.com"
-            msg['To'] = "ranaumaradvocate521@gmail.com"
+            msg['To'] = "Info@vipclasslimos.com"
             first_name = request.POST['First_Name']
             print('first_name',first_name)
             last_name  = request.POST['Last_Name']
