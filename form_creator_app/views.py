@@ -101,17 +101,8 @@ def send_godaddyMAil_reservation_form(data):
     msg = MIMEMultipart()
     msg['Subject'] = "Reservation Request!"
     msg['From'] = "Info@vipclasslimos.com"
-    msg['To'] = "ranaumaradvocate521@gmail.com"
-    # msg['To'] = "asif5955iqbal@yahoo.com"
+    msg['To'] = "Info@vipclasslimos.com"
 
-    # Add the logo to the message object
-    # with open(logo_path, 'rb') as f:
-    #     logo_data = f.read()
-    # logo = MIMEImage(logo_data)
-    # logo.add_header('Content-ID', '<logo>')
-    # msg.attach(logo)
-
-    # Create the HTML version of the email body
     html_body = f"""\
     <html>
     <body>
@@ -370,7 +361,7 @@ def send_godaddyMAil_quotation(data):
         # msg.set_content("Order details are as following:\n"+str(data)+'\n Thank you.')
         msg['Subject'] = "Quote Request!"
         msg['From'] = "Info@vipclasslimos.com"
-        msg['To'] = "ranaumaradvocate521@gmail.com"
+        msg['To'] = "Info@vipclasslimos.com"
 
         # Connect to the SMTP server
         smtp_server = "smtpout.secureserver.net"
