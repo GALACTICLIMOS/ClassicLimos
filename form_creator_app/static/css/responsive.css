@@ -525,7 +525,7 @@ Version:	1.1
 	padding: 0;
 }
 .section{
-	padding:50px 0px;
+	
 }
 .section-title {
 	margin-bottom: 30px;
@@ -1032,7 +1032,7 @@ Version:	1.1
 
 
 .section{
-	padding:50px 0px;
+	
 }
 .section-title {
 	margin-bottom: 30px;
@@ -1299,6 +1299,8 @@ Version:	1.1
 .footer .footer-top {
 	padding: 65px 0px;
 }
+
+  
 
 
 
