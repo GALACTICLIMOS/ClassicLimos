@@ -161,9 +161,11 @@
 											<nav class="navigation">
 												<ul class="nav menu">
 		
-												<li class="active"><a href="home" style=" padding:12px; margin:14px; color: white;  ">HOME</a>
+												{% comment %} <li class="active"><a href="home" style=" padding:12px; margin:14px; color: white;  ">HOME</a>
 														
-													</li>
+													</li> {% endcomment %}
+													<li><a href="limo-hire-services" style="color: white; "  >Home
+														</a>
 													<li><a href="limo-hire-services" style="color: white; "  >SERVICES
 														<i class="icofont-rounded-down"></i></a>
 														<ul class="dropdown">
@@ -329,12 +331,13 @@
 					<div class="row"> 
 						<div class="col-lg-12">
 							<div class="contact-us-form">
-								<h4 style="text-align: center; color:black;">Get Quick Quote
-								</h4>
+								
 								
 								<!-- Form -->
 								<form class="form" action="Get_Quick_Quote"  method = 'POST'>
 									{% csrf_token %}
+									<h4 style="text-align: center; color:black; margin-top:20px; margin-bottom:20px;">Get Quick Quote
+									</h4>
 									<div class="row">
 										<div class="col-lg-3">
 											<div class="form-group">
