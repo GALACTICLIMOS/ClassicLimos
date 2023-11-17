@@ -93,7 +93,7 @@
 							<ul class="top-contact">
 								<!-- <ul class="social"> -->
 									<a  href="" ><i style="margin-right: 10px; color:white;" class="fab fa-facebook-f"></i></a>
-			 	
+				 
 									
 									<a  href=""><i style="margin-right: 10px; color:white;" class="fab fa-instagram" style="color:white;"></i></a>	
 									<a href="vip_limo_linkedin"><i style="margin-right: 10px; color:white;" class="fab fa-linkedin" style="color:white;"></i></a>	 
@@ -116,7 +116,9 @@
 							<div class="col-lg-2 col-md-3 col-12">
 								<!-- Start Logo -->
 								<div class="logo">
-									<a href=""><img style="hight:100px; width:100px;" src="{% static 'img/logo.png' %}" alt="#"></a>
+									{% comment %} <a href=""><img style="" src="{% static 'Fleet/logo.png' %}" alt="#"></a> {% endcomment %}
+
+									<a href=""><img style="height:100px;" src="{% static 'img/logo.png' %}" alt="#"></a>
 								</div>
 								<!-- End Logo -->
 								<!-- Mobile Nav -->
@@ -141,6 +143,11 @@
 													<li><a href="KIDSLIMOPARTIES">KIDS LIMO PARTIES</a></li>
 													<li><a href="SPECIALOCCASIONLIMOHIRE">SPECIAL OCCASION LIMO HIRE</a></li>
 													<li><a href="ROYALASCOTLIMOHIRE">ROYAL ASCOT LIMO HIRE</a></li>
+													<li><a href="ROYALASCOTLIMOHIRE">High School Dances</a></li>
+													<li><a href="ROYALASCOTLIMOHIRE">Night Outs</a></li>
+													<li><a href="ROYALASCOTLIMOHIRE">Holiday Light Tours</a></li>
+													
+
 												</ul>
 											</a></li>
 											<li><a href="fleet" style="color: white; "  >FLEET
@@ -162,7 +169,11 @@
 											 <li><a href="CONTACT" style="color: white; "  >CONTACT US</a></li>
 											<li><a href="QUOTES" style="color: white; "  >QUOTES</a></li>
 											<li><a href="OFFERS" style="color: white; "  >OFFERS</a></li>
-
+											<div class="form-group login-btn mt-3">
+												<a class="btn" 
+												href="reservation" style="color:white;"
+												>Book Now</a>
+											</div>
 
 										</ul>
 									</nav>

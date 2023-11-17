@@ -75,6 +75,7 @@
 		
 	
 		<!-- Header Area -->
+		<!-- Header Area -->
 		<header class="header" >
 			<!-- Topbar -->
 			<div class="topbar" style="background-color: black;">
@@ -95,7 +96,7 @@
 							<ul class="top-contact">
 								<!-- <ul class="social"> -->
 									<a  href="" ><i style="margin-right: 10px; color:white;" class="fab fa-facebook-f"></i></a>
-			 	
+				 
 									
 									<a  href=""><i style="margin-right: 10px; color:white;" class="fab fa-instagram" style="color:white;"></i></a>	
 									<a href="vip_limo_linkedin"><i style="margin-right: 10px; color:white;" class="fab fa-linkedin" style="color:white;"></i></a>	 
@@ -118,7 +119,9 @@
 							<div class="col-lg-2 col-md-3 col-12">
 								<!-- Start Logo -->
 								<div class="logo">
-									<a href=""><img style="hight:100px; width:100px;" src="{% static 'img/logo.png' %}" alt="#"></a>
+									{% comment %} <a href=""><img style="" src="{% static 'Fleet/logo.png' %}" alt="#"></a> {% endcomment %}
+
+									<a href=""><img style="height:100px;" src="{% static 'img/logo.png' %}" alt="#"></a>
 								</div>
 								<!-- End Logo -->
 								<!-- Mobile Nav -->
@@ -134,15 +137,20 @@
 										<li class="active"><a href="home" style=" padding:12px; margin:14px; color: white;  ">HOME</a>
 												
 											</li>
-											<li><a href="" style="color: white; "  >SERVICES
+											<li><a href="limo-hire-services" style="color: white; "  >SERVICES
 												<i class="icofont-rounded-down"></i></a>
 												<ul class="dropdown">
-													<li><a href="">LIMO HIRE SERVICES</a></li>
-													<li><a href="">WEDDING CARS</a></li>
-													<li><a href="">PROM LIMOS</a></li>
-													<li><a href="">KIDS LIMO PARTIES</a></li>
-													<li><a href="">SPECIAL OCCASION LIMO HIRE</a></li>
-													<li><a href="">ROYAL ASCOT LIMO HIRE</a></li>
+													<li><a href="limo-hire-services">LIMO HIRE SERVICES</a></li>
+													<li><a href="weddingcarhire">WEDDING CARS</a></li>
+													<li><a href="PROMLIMO">PROM LIMOS</a></li>
+													<li><a href="KIDSLIMOPARTIES">KIDS LIMO PARTIES</a></li>
+													<li><a href="SPECIALOCCASIONLIMOHIRE">SPECIAL OCCASION LIMO HIRE</a></li>
+													<li><a href="ROYALASCOTLIMOHIRE">ROYAL ASCOT LIMO HIRE</a></li>
+													<li><a href="ROYALASCOTLIMOHIRE">High School Dances</a></li>
+													<li><a href="ROYALASCOTLIMOHIRE">Night Outs</a></li>
+													<li><a href="ROYALASCOTLIMOHIRE">Holiday Light Tours</a></li>
+													
+
 												</ul>
 											</a></li>
 											<li><a href="fleet" style="color: white; "  >FLEET
@@ -159,12 +167,16 @@
 											</a></li>
 
 
+										
 											<li><a href="reservation" style="color: white; "  >RESERVATION</a></li>
-											
 											 <li><a href="CONTACT" style="color: white; "  >CONTACT US</a></li>
 											<li><a href="QUOTES" style="color: white; "  >QUOTES</a></li>
 											<li><a href="OFFERS" style="color: white; "  >OFFERS</a></li>
-
+											<div class="form-group login-btn mt-3">
+												<a class="btn" 
+												href="reservation" style="color:white;"
+												>Book Now</a>
+											</div>
 
 										</ul>
 									</nav>
