@@ -34,7 +34,7 @@ def SEATPARTYBUSES(request):
 def OFFERS(request):
     return render(request, 'OFFERS.html')
 def QUOTES(request):
-    return render(request, 'QUOTES.html')
+    return render(request, 'new_quotes.html')
 def CONTACT(request):
     return render(request, 'CONTACT.html')
 def Reservation(request):
