@@ -235,13 +235,16 @@
 					<div class="row"> 
 						<div class="col-lg-12">
 							<div class="contact-us-form">
-								<h4 style="text-align: center; color:black;">Get Quick Quote
-								</h4>
+							
 								
 								<!-- Form -->
 								<form class="form" action="Get_Quick_Quote"  method = 'POST'>
 									{% csrf_token %}
 									<div class="row">
+										<div class="col-lg-12">
+											<h4 style="text-align: center; color:black;">Get Quick Quote
+											</h4><br>
+										</div>
 										<div class="col-lg-3">
 											<div class="form-group">
 												<input type="text" name="Name" placeholder="Name" required="">
