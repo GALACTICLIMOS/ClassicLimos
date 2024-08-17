@@ -262,7 +262,7 @@ def send_godaddyMAil_reservation_form(data):
 
     server = smtplib.SMTP_SSL(smtp_server, smtp_port)
     username = "Info@vipclasslimos.com"
-    password = 'Galactic@30047'
+    password = 'Marksmith@30047'
     server.login(username, password)
 
     # Send the email
@@ -377,7 +377,7 @@ def send_godaddyMAil_quotation(data):
         smtp_port = 465 # Use port 465 for SSL encryption
         server = smtplib.SMTP_SSL(smtp_server, smtp_port)
         username = "Info@vipclasslimos.com"
-        password = 'Galactic@30047'
+        password = 'Marksmith@30047'
         # password = settings.Mail_password
         server.login(username, password)
 
@@ -552,7 +552,7 @@ def send_email1234(request):
 
             # Authentication
             username = "Info@vipclasslimos.com"
-            password = 'Galactic@30047'
+            password = 'Marksmith@30047'
             obj.login(username, password)
 
             # Sending the email
@@ -796,7 +796,7 @@ def send_email(request):
                 smtp_port = 465  # Port for SMTP_SSL (update to your server's settings)
   
                 username = "Info@vipclasslimos.com"
-                password = 'Galactic@30047'
+                password = 'Marksmith@30047'
                 obj = smtplib.SMTP_SSL(smtp_server, smtp_port)
 
                 # Authentication
