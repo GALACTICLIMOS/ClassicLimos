@@ -313,6 +313,7 @@ def Get_Quick_Quote_method(request):
         Phone = request.POST['Phone']
         Pick_Location = request.POST['Pick_Location']
         Drop_Location = request.POST['Drop_Location']
+        Stop_En_Route = request.POST['Stop_En_Route']   
         Select_Vehicle = request.POST['Select_Vehicle']
         No_of_Passengers = request.POST['No_of_Passengers']
         No_of_Hours = request.POST['No_of_Hours']
@@ -333,7 +334,7 @@ def Get_Quick_Quote_method(request):
         G = Get_Quick_Quote.objects.create(Name = Name, email = email, Phone = Phone, Pick_Location = Pick_Location, Drop_Location = Drop_Location, Select_Vehicle = Select_Vehicle, No_of_Passengers = No_of_Passengers, No_of_Hours = No_of_Hours, Trip_Type = Trip_Type , Pickup_Date = Pickup_Date , Pickup_Time = Pickup_Time )
         G.save()
         try:
-            details_dict = {'Name':Name,'email':email,'Phone':Phone,'Pick_Location':Pick_Location,'Drop_Location':Drop_Location,'Select_Vehicle':Select_Vehicle,'No_of_Passengers':No_of_Passengers,'No_of_Hours':No_of_Hours,'Trip_Type':Trip_Type,'Pickup_Date':Pickup_Date,'Pickup_Time':Pickup_Time}
+            details_dict = {'Name':Name,'email':email,'Phone':Phone,'Pick_Location':Pick_Location,'Drop_Location':Drop_Location, 'Stop_En_Route':Stop_En_Route, 'Select_Vehicle':Select_Vehicle,'No_of_Passengers':No_of_Passengers,'No_of_Hours':No_of_Hours,'Trip_Type':Trip_Type,'Pickup_Date':Pickup_Date,'Pickup_Time':Pickup_Time}
             send_godaddyMAil_quotation(details_dict)
             print("Get_Quick_Quote_method mail sent succesfully.")
         except Exception as e:
