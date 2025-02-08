@@ -415,6 +415,11 @@
 										</div>
 										<div class="col-lg-3">
 											<div class="form-group">
+												<input type="text" name="Stop_En_Route" placeholder="Stop En Route" required="">
+											</div>
+										</div>
+										<div class="col-lg-3">
+											<div class="form-group">
 												<input type="text" name="Select_Vehicle" placeholder="Select Vehicle" required="">
 											</div>
 										</div>
@@ -443,12 +448,32 @@
 												<input type="text" name="Pickup_Time" placeholder="Pick-Up Time" required="">
 											</div>
 										</div>
-										<div class="col-lg-3">
+										<!-- <div class="col-lg-3">
 										
 											<div class="form-group login-btn">
 												<button class="btn" type="submit">Send</button>
 											</div>
+										</div> -->
+										<div style="background-color: #19234D; width:97%"  class="row alert align-items-center p-2 m-auto">
+											<div class="col-auto">
+												<input 
+													type="checkbox" 
+													name="checkbox" 
+													id="myCheckbox" 
+													style="width: 20px; height: 20px; cursor: pointer;"
+												>
+											</div>
+											<div class="col">
+												<p class="text-light mb-0" style="font-size: 14px; font-weight: bold;">
+													I Confirm.
+												</p>
+											</div>
 										</div>
+										<!-- Submit Button -->
+										<div class="col-sm-6 col-lg-3 text-white mb-3">
+											<button type="submit" class="btn" id="myButton" style=" font-size:11px; font-family: 'Hind'; background-color: #19234D; text-transform: uppercase; margin-top:20px;">Submit</button>
+										</div>
+								
 										
 
 										
@@ -788,4 +813,39 @@
 		<script src="{% static 'js/main.js' %}"></script>
 
     </body>
+
+	
+<script>
+	function updateButtonState() {
+		var checkbox = document.getElementById('myCheckbox');
+		var button = document.getElementById('myButton');
+		var helpText = document.getElementById('helpText');
+		if (checkbox.checked) {
+			button.disabled = false;
+			button.classList.remove('disabled');
+			button.textContent = 'Submit';
+			helpText.style.display = 'none';
+			$(button).tooltip('disable');
+		} else {
+			button.disabled = true;
+			button.classList.add('disabled');
+			button.textContent = 'Submit';
+
+		}
+	}
+
+	document.getElementById('myCheckbox').addEventListener('change', updateButtonState);
+
+	document.getElementById('myButton').addEventListener('click', function(event) {
+		var checkbox = document.getElementById('myCheckbox');
+		var helpText = document.getElementById('helpText');
+		if (!checkbox.checked) {
+			event.preventDefault();
+			helpText.style.display = 'block';
+		}
+	});
+
+	// Call the function once to set the initial state based on the checkbox
+	updateButtonState();
+</script>
 </html>
