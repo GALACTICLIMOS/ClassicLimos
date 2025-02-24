@@ -816,3 +816,78 @@ def send_email(request):
 
     return render(request, 'reservationform.html', {'uploaded_signature_url': uploaded_signature_url})
  
+
+def bostonma(request):
+    return render(request, 'area_we_serve/Boston_MA.html')
+
+
+def AtlantaGeorgia(request):
+    return render(request, 'area_we_serve/AtlantaGeorgia.html')
+
+def AlexandriaVA(request):
+    return render(request, 'area_we_serve/AlexandriaVA.html')
+
+def ArlingtonTexas(request):
+    return render(request, 'area_we_serve/ArlingtonTexas.html')
+
+def BaltimoreMD(request):
+    return render(request, 'area_we_serve/BaltimoreMD.html')
+
+def ChicagoIL(request):
+    return render(request, 'area_we_serve/ChicagoIL.html')
+
+
+def DallasTX(request):
+    return render(request, 'area_we_serve/DallasTX.html')
+
+
+def FortMyersFL(request):
+    return render(request, 'area_we_serve/FortMyersFL.html')
+
+def SanFranciscoCA(request):
+    return render(request, 'area_we_serve/SanFranciscoCA.html')    
+
+
+def SacramentoCA(request):
+    return render(request, 'area_we_serve/SacramentoCA.html')
+
+
+def PhoenixAZ(request):
+    return render(request, 'area_we_serve/PhoenixAZ.html')
+
+
+def PittsburghPA(request):
+    return render(request, 'area_we_serve/PittsburghPA.html')
+
+def PhiladelphiaPA(request):
+    return render(request, 'area_we_serve/PhiladelphiaPA.html')
+
+def LasVegasNV(request):
+    return render(request, 'area_we_serve/LasVegasNV.html')
+
+def LosAngelesCA(request):
+    return render(request, 'area_we_serve/LosAngelesCA.html')
+
+def NewYorkCityNY(request):
+    return render(request, 'area_we_serve/New_York_CityNY.html')
+
+
+def WashingtonDC(request):
+    return render(request, 'area_we_serve/WashingtonDC.html')
+
+def MiamiFL(request):
+    return render(request, 'area_we_serve/MiamiFL.html')
+
+
+
+def CharlotteNC(request):
+    return render(request, 'area_we_serve/CharlotteNC.html')
+
+def ClevelandOH(request):
+    return render(request, 'area_we_serve/ClevelandOH.html')
+
+def TampaFL(request):
+    return render(request, 'area_we_serve/TampaFL.html')
+
+def HoustonTX(request):
+    return render(request, 'area_we_serve/HoustonTX.html')
