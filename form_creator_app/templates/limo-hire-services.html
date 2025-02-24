@@ -53,6 +53,20 @@
 			font-family: "Times New Roman", Times, serif;
 			color:white;
 		  }
+		  .dropdown {
+    width: 250px; /* Set your preferred width */
+    max-height: 300px; /* Limit the height */
+    overflow-y: auto; /* Enable vertical scrolling */
+    background-color: #333; /* Background color */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px;
+}
+.dropdown li a {
+    color: white; /* Ensure text is visible */
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+}
 	</style>
     <body>
 	
@@ -114,24 +128,26 @@
 									<div class="col-lg-2 col-md-3 col-12">
 										<!-- Start Logo -->
 										<div class="logo">
-											{% comment %} <a href=""><img style="" src="{% static 'Fleet/logo.png' %}" alt="#"></a> {% endcomment %}
-		
-											<a href=""><img style="width: 100; height:80px;" src="{% static 'img/logo4.png' %}" alt="#"></a>
+				
+				
+											<a href=""><img style="width: 80; height:60px;" src="{% static 'img/logo4.png' %}"
+													alt="#"></a>
 										</div>
 										<!-- End Logo -->
 										<!-- Mobile Nav -->
-										<div class="mobile-nav" ></div>
+										<div class="mobile-nav"></div>
 										<!-- End Mobile Nav -->
 									</div>
 									<div class="col-lg-10 col-md-9 col-12">
 										<!-- Main Menu -->
-										<div class="main-menu" >
+										<div class="main-menu">
 											<nav class="navigation">
 												<ul class="nav menu">
-		
-											<li><a href="index" style="color: white; "  >Home</a></li>
-													<li><a href="limo-hire-services" style="color: white; "  >SERVICES
-														<i class="icofont-rounded-down"></i></a>
+				
+													<li><a href="index" style="color: white; ">Home</a></li>
+				
+													<li><a href="limo-hire-services" style="color: white; ">SERVICES
+															<i class="icofont-rounded-down"></i></a>
 														<ul class="dropdown">
 															<li><a href="limo-hire-services">LIMO HIRE SERVICES</a></li>
 															<li><a href="weddingcarhire">WEDDING CARS</a></li>
@@ -142,55 +158,76 @@
 															<li><a href="ROYALASCOTLIMOHIRE">High School Dances</a></li>
 															<li><a href="ROYALASCOTLIMOHIRE">Night Outs</a></li>
 															<li><a href="ROYALASCOTLIMOHIRE">Holiday Light Tours</a></li>
-															
-
 														</ul>
-													</a></li>
-<li><a href="fleet" style="color: white; "  >FLEET
-	
-	<i class="icofont-rounded-down"></i></a>
-<ul class="dropdown">
-		
-	<li><a href="fleet">4 SEATS LUXURY SEDAN</a></li>
-
-<li><a href="fleet">6 SEATS LUXURY SUV</a></li>
-<li><a href="fleet">8 to 10 SEATS LIMO</a></li>
-
-<li><a href="fleet">13 SEATS SPRINTER VAN</a></li>
-<li><a href="fleet">14 SEATS STARCH LIMO</a></li>
-<li><a href="fleet">20 TO 26 SEATS PARTY BUS</a></li>
-<li><a href="fleet">36 SEATS COACH BUS</a></li>
-<li><a href="fleet">40 SEATS PARTY BUS</a></li>
-<li><a href="fleet">55 SEATS COACH BUS</a></li>
-
-
-</ul>
-</a></li>
-
-		
-												
-													<li><a href="reservation" style="color: white; "  >RESERVATION</a></li>
-													 <li><a href="CONTACT" style="color: white; "  >CONTACT US</a></li>
-													<li><a href="QUOTES" style="color: white; "  >QUOTES</a></li>
-													<li><a href="OFFERS" style="color: white; "  >OFFERS</a></li>
+														</a>
+													</li>
+													<li><a href="fleet" style="color: white; ">FLEET
+															<i class="icofont-rounded-down"></i></a>
+														<ul class="dropdown">
+															<li><a href="fleet">4 SEATS LUXURY SEDAN</a></li>
+															<li><a href="fleet">6 SEATS LUXURY SUV</a></li>
+															<li><a href="fleet">8 to 10 SEATS LIMO</a></li>
+															<li><a href="fleet">13 SEATS SPRINTER VAN</a></li>
+															<li><a href="fleet">14 SEATS STARCH LIMO</a></li>
+															<li><a href="fleet">20 TO 26 SEATS PARTY BUS</a></li>
+															<li><a href="fleet">36 SEATS COACH BUS</a></li>
+															<li><a href="fleet">40 SEATS PARTY BUS</a></li>
+															<li><a href="fleet">55 SEATS COACH BUS</a></li>
+														</ul>
+														</a>
+													</li>
+													<li><a href="reservation" style="color: white; ">RESERVATION</a></li>
+													<!-- <li><a href="CONTACT" style="color: white; "  >CONTACT US</a></li> -->
+													<li><a href="QUOTES" style="color: white; ">QUOTES</a></li>
+				
+				
+				
+													<li><a href="limo-hire-services" style="color: white; ">Area WE Serve
+									<i class="icofont-rounded-down"></i></a>
+									<ul class="dropdown">
+											<li><a href="BostonMA">Boston, MA</a></li>
+											<li><a href="AtlantaGeorgia">Atlanta Georgia</a></li>
+											<li><a href="AlexandriaVA">Alexandria, VA</a></li>
+											<li><a href="ArlingtonTexas">Arlington Texas</a></li>
+											<li><a href="BaltimoreMD">Baltimore, MD</a></li>
+											<li><a href="ChicagoIL">Chicago, IL</a></li>
+											<li><a href="DallasTX">Dallas, TX</a></li>
+											<li><a href="FortMyersFL">Fort Myers, FL</a></li>
+											<li><a href="SanFranciscoCA">San Francisco, CA</a></li>
+											<li><a href="SacramentoCA"> Sacramento, CA  </a></li>
+											<li><a href="PhoenixAZ"> Phoenix, AZ  </a></li>
+											<li><a href="PittsburghPA">  Pittsburgh, PA </a></li>
+											<li><a href="PhiladelphiaPA">  Philadelphia, PA </a></li>
+											<li><a href="LasVegasNV"> Las Vegas, NV  </a></li>
+											<li><a href="LosAngelesCA">Los Angeles, CA   </a></li>
+											<li><a href="NewYorkCityNY">New York City, NY   </a></li>
+											<li><a href="WashingtonDC"> Washington DC  </a></li>
+											<li><a href="MiamiFL">  Miami, FL </a></li>
+											<li><a href="CharlotteNC"> Charlotte, NC  </a></li>
+											<li><a href="ClevelandOH">  Cleveland, OH </a></li>
+											<li><a href="TampaFL">Tampa, FL</a></li>
+											<li><a href="HoustonTX">  Houston, TX </a></li>
+									</ul>
+									</a>
+									</li>
+													<li><a href="OFFERS" style="color: white; ">OFFERS</a></li>
 													<div class="form-group login-btn mt-3">
-														<a class="btn" 
-														href="reservation" style="color:white;"
-														>Book Now</a>
+														<a class="btn" href="reservation" style="color:white;">Book Now</a>
 													</div>
-		
+				
 												</ul>
 											</nav>
 										</div>
 										<!--/ End Main Menu -->
 									</div>
-									
+				
 								</div>
 							</div>
 						</div>
 					</div>
-					<!--/ End Header Inner -->
+									<!--/ End Header Inner -->
 				</header>
+				
 		<!-- End Header Area -->
 		
 		<!-- Slider Area -->
