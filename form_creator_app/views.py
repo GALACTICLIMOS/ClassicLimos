@@ -8,6 +8,60 @@ def index(request):
 def limohireservices(request):
     return render(request, 'limo-hire-services.html')
 
+# ________________________________________________
+# areas function 
+def AtlantaGeorgia(request):
+    return render(request, 'AtlantaGeorgia.html')
+def AlexandriaVA(request):
+    return render(request, 'AlexandriaVA.html')
+def ArlingtonTexas(request):
+    return render(request, 'ArlingtonTexas.html')
+def BaltimoreMD(request):
+    return render(request, 'BaltimoreMD.html')
+def BostonMA(request):
+    return render(request, 'Boston_MA.html')
+def CharlotteNC(request):
+    return render(request, 'CharlotteNC.html')
+def ClevelandOH(request):
+    return render(request, 'ClevelandOH.html')
+def ChicagoIL(request):
+    return render(request, 'ChicagoIL.html')
+def Dallas(request):
+    return render(request, 'Dallas_tx.html')
+def FortMyersFL(request):
+    return render(request, 'FortMyersFL.html')
+def HoustonTX(request):
+    return render(request, 'HoustonTX.html')
+def SanFranciscoCA(request):
+    return render(request, 'SanFranciscoCA.html')
+def SacramentoCA(request):
+    return render(request, 'SacramentoCA.html')
+def phoenix(request):
+    return render(request, 'phoenixAZ.html')
+def PittsburghPA(request):
+    return render(request, 'PittsburghPA.html')
+def Philadelphia(request):
+    return render(request, 'Philadelphia_PA.html')
+def LasVegasNV(request):
+    return render(request, 'LasVegasNV.html')
+def LosAngelesCA(request):
+    return render(request, 'LosAngelesCA.html')
+def MiamiFL(request):
+    return render(request, 'MiamiFL.html')
+def NewYorkCity(request):
+    return render(request, 'NewYorkCity_NY.html')
+# def PhoenixAZ(request):
+#     return render(request, 'PhoenixAZ.html')
+def TampaFL(request):
+    return render(request, 'TampaFL.html')
+def Washington(request):
+    return render(request, 'Washington_DC.html')
+# def TampaFL(request):
+#     return render(request, 'TampaFL.html')
+# ________________________________________________
+
+
+
 
 def fleet(request):
     return render(request, 'Fleet.html')
@@ -262,7 +316,7 @@ def send_godaddyMAil_reservation_form(data):
 
     server = smtplib.SMTP_SSL(smtp_server, smtp_port)
     username = "Info@vipclasslimos.com"
-    password = 'Marksmith@30047'
+    password = 'Galactic@30047'
     server.login(username, password)
 
     # Send the email
@@ -313,7 +367,6 @@ def Get_Quick_Quote_method(request):
         Phone = request.POST['Phone']
         Pick_Location = request.POST['Pick_Location']
         Drop_Location = request.POST['Drop_Location']
-        Stop_En_Route = request.POST['Stop_En_Route']   
         Select_Vehicle = request.POST['Select_Vehicle']
         No_of_Passengers = request.POST['No_of_Passengers']
         No_of_Hours = request.POST['No_of_Hours']
@@ -334,7 +387,7 @@ def Get_Quick_Quote_method(request):
         G = Get_Quick_Quote.objects.create(Name = Name, email = email, Phone = Phone, Pick_Location = Pick_Location, Drop_Location = Drop_Location, Select_Vehicle = Select_Vehicle, No_of_Passengers = No_of_Passengers, No_of_Hours = No_of_Hours, Trip_Type = Trip_Type , Pickup_Date = Pickup_Date , Pickup_Time = Pickup_Time )
         G.save()
         try:
-            details_dict = {'Name':Name,'email':email,'Phone':Phone,'Pick_Location':Pick_Location,'Drop_Location':Drop_Location, 'Stop_En_Route':Stop_En_Route, 'Select_Vehicle':Select_Vehicle,'No_of_Passengers':No_of_Passengers,'No_of_Hours':No_of_Hours,'Trip_Type':Trip_Type,'Pickup_Date':Pickup_Date,'Pickup_Time':Pickup_Time}
+            details_dict = {'Name':Name,'email':email,'Phone':Phone,'Pick_Location':Pick_Location,'Drop_Location':Drop_Location,'Select_Vehicle':Select_Vehicle,'No_of_Passengers':No_of_Passengers,'No_of_Hours':No_of_Hours,'Trip_Type':Trip_Type,'Pickup_Date':Pickup_Date,'Pickup_Time':Pickup_Time}
             send_godaddyMAil_quotation(details_dict)
             print("Get_Quick_Quote_method mail sent succesfully.")
         except Exception as e:
@@ -378,7 +431,7 @@ def send_godaddyMAil_quotation(data):
         smtp_port = 465 # Use port 465 for SSL encryption
         server = smtplib.SMTP_SSL(smtp_server, smtp_port)
         username = "Info@vipclasslimos.com"
-        password = 'Marksmith@30047'
+        password = 'Galactic@30047'
         # password = settings.Mail_password
         server.login(username, password)
 
@@ -553,7 +606,7 @@ def send_email1234(request):
 
             # Authentication
             username = "Info@vipclasslimos.com"
-            password = 'Marksmith@30047'
+            password = 'Galactic@30047'
             obj.login(username, password)
 
             # Sending the email
@@ -797,7 +850,7 @@ def send_email(request):
                 smtp_port = 465  # Port for SMTP_SSL (update to your server's settings)
   
                 username = "Info@vipclasslimos.com"
-                password = 'Marksmith@30047'
+                password = 'Galactic@30047'
                 obj = smtplib.SMTP_SSL(smtp_server, smtp_port)
 
                 # Authentication
@@ -816,78 +869,3 @@ def send_email(request):
 
     return render(request, 'reservationform.html', {'uploaded_signature_url': uploaded_signature_url})
  
-
-def bostonma(request):
-    return render(request, 'area_we_serve/Boston_MA.html')
-
-
-def AtlantaGeorgia(request):
-    return render(request, 'area_we_serve/AtlantaGeorgia.html')
-
-def AlexandriaVA(request):
-    return render(request, 'area_we_serve/AlexandriaVA.html')
-
-def ArlingtonTexas(request):
-    return render(request, 'area_we_serve/ArlingtonTexas.html')
-
-def BaltimoreMD(request):
-    return render(request, 'area_we_serve/BaltimoreMD.html')
-
-def ChicagoIL(request):
-    return render(request, 'area_we_serve/ChicagoIL.html')
-
-
-def DallasTX(request):
-    return render(request, 'area_we_serve/DallasTX.html')
-
-
-def FortMyersFL(request):
-    return render(request, 'area_we_serve/FortMyersFL.html')
-
-def SanFranciscoCA(request):
-    return render(request, 'area_we_serve/SanFranciscoCA.html')    
-
-
-def SacramentoCA(request):
-    return render(request, 'area_we_serve/SacramentoCA.html')
-
-
-def PhoenixAZ(request):
-    return render(request, 'area_we_serve/PhoenixAZ.html')
-
-
-def PittsburghPA(request):
-    return render(request, 'area_we_serve/PittsburghPA.html')
-
-def PhiladelphiaPA(request):
-    return render(request, 'area_we_serve/PhiladelphiaPA.html')
-
-def LasVegasNV(request):
-    return render(request, 'area_we_serve/LasVegasNV.html')
-
-def LosAngelesCA(request):
-    return render(request, 'area_we_serve/LosAngelesCA.html')
-
-def NewYorkCityNY(request):
-    return render(request, 'area_we_serve/New_York_CityNY.html')
-
-
-def WashingtonDC(request):
-    return render(request, 'area_we_serve/WashingtonDC.html')
-
-def MiamiFL(request):
-    return render(request, 'area_we_serve/MiamiFL.html')
-
-
-
-def CharlotteNC(request):
-    return render(request, 'area_we_serve/CharlotteNC.html')
-
-def ClevelandOH(request):
-    return render(request, 'area_we_serve/ClevelandOH.html')
-
-def TampaFL(request):
-    return render(request, 'area_we_serve/TampaFL.html')
-
-def HoustonTX(request):
-    return render(request, 'area_we_serve/HoustonTX.html')
