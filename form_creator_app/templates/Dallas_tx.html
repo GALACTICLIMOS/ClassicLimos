@@ -1,0 +1,442 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Dallas TX Limo Service</title>
+	<!-- <link rel="icon" href="{% static 'img/logo.png' %}"> -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
+
+	<style>
+		body {
+			font-family: 'Poppins', sans-serif;
+			margin: 0;
+			padding: 0;
+			background-color: #fff;
+		}
+
+		/* Top Bar */
+		.top-bar {
+			background-color: #000;
+			color: white;
+			font-size: 14px;
+			padding: 8px 0;
+		}
+
+		.top-bar .container {
+			max-width: 1200px;
+			margin: 0 auto;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 0 15px;
+		}
+
+		.top-bar .contact span {
+			margin-right: 15px;
+		}
+
+		.top-bar a {
+			color: white;
+			margin-left: 10px;
+			text-decoration: none;
+		}
+
+		/* Navbar */
+		nav.navbar {
+			background-color: #19234D;
+		}
+
+		.nav-container {
+			max-width: 1200px;
+			margin: 0 auto;
+			display: flex;
+			justify-content: space-between;
+			/* CHANGED from center */
+			align-items: center;
+			/* Added for vertical alignment */
+			padding: 0 15px;
+			/* Optional padding */
+		}
+
+
+		.nav-container ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		.nav-container ul li {
+			position: relative;
+		}
+
+		.nav-container ul li a {
+			display: block;
+			padding: 15px 20px;
+			color: white;
+			text-decoration: none;
+			font-weight: 500;
+		}
+
+		.nav-container ul li:hover>a {
+			background-color: #0f172a;
+		}
+
+		.nav-container ul li ul.dropdown {
+			display: none;
+			position: absolute;
+			background-color: white;
+			color: #000;
+			min-width: 200px;
+			z-index: 999;
+		}
+
+		.nav-container ul li:hover ul.dropdown {
+			display: block;
+		}
+
+		.nav-container ul li ul.dropdown li a {
+			color: #19234D;
+			padding: 10px;
+			font-weight: 400;
+		}
+
+		.nav-container ul li ul.dropdown li a:hover {
+			background-color: #f5f5f5;
+		}
+
+		/* Hero */
+		.hero {
+			background-image: url('{% static "img2.jpg" %}');
+			background-size: cover;
+			background-position: center;
+			text-align: center;
+			padding: 100px 20px;
+			color: white;
+		}
+
+		.hero h1 {
+			font-size: 48px;
+			margin-bottom: 20px;
+		}
+
+		.hero p {
+			font-size: 20px;
+		}
+
+		/* Content Section */
+		.content-section {
+			padding: 50px 20px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			gap: 40px;
+		}
+
+		.content-section .text-block,
+		.content-section .image-block {
+			flex: 1 1 400px;
+		}
+
+		.content-section img {
+			max-width: 100%;
+			height: auto;
+			border-radius: 8px;
+		}
+
+		.content-section h2 {
+			color: #19234D;
+			font-size: 28px;
+			margin-bottom: 10px;
+		}
+
+		.content-section p {
+			text-align: justify;
+		}
+
+		/* Footer */
+		.footer-top {
+			background-color: black;
+			color: white;
+			padding: 40px 20px;
+		}
+
+		.footer-top h2 {
+			color: #E6AE48;
+			font-size: 18px;
+		}
+
+		.footer-top ul {
+			list-style: none;
+			padding: 0;
+		}
+
+		.footer-top ul li a {
+			color: #114DBC;
+			text-decoration: none;
+		}
+
+		.footer-bottom {
+			background-color: #000;
+			color: white;
+			text-align: center;
+			padding: 10px 0;
+			font-size: 14px;
+		}
+
+		.hamburger {
+			display: none;
+			cursor: pointer;
+			color: white;
+			font-size: 24px;
+			margin-left: auto;
+			padding: 15px;
+		}
+
+		@media screen and (max-width: 768px) {
+			.nav-container {
+				flex-direction: column;
+				align-items: flex-start;
+			}
+
+			.nav-container ul.nav-links {
+				display: none;
+				flex-direction: column;
+				width: 100%;
+				background-color: #19234D;
+			}
+
+			.nav-container ul.nav-links li {
+				width: 100%;
+			}
+
+			.nav-container ul.nav-links li a {
+				width: 100%;
+				display: block;
+			}
+
+			.nav-container ul.nav-links.show {
+				display: flex;
+			}
+
+			.hamburger {
+				display: block;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<!-- Top Bar -->
+	<div class="top-bar">
+		<div class="container">
+			<div class="contact">
+				<span><i class="fa fa-phone-alt"></i> +1(888)383-3911</span>
+				<span><i class="fa fa-envelope"></i> info@galacticlimo.com</span>
+			</div>
+			<div class="social">
+				<a href="https://www.facebook.com/profile.php?id=61551097980378&mibextid=LQQJ4d" target="_blank"><i
+						class="fab fa-facebook-f"></i></a>
+				<a href="https://instagram.com/galacticlimos?igshid=MzRlODBiNWFlZA==" target="_blank"><i
+						class="fab fa-instagram"></i></a>
+				<a href="https://www.linkedin.com/company/galactic-limo-s-llc/" target="_blank"><i
+						class="fab fa-linkedin"></i></a>
+			</div>
+		</div>
+	</div>
+
+	<!-- Navbar -->
+	<nav class="navbar">
+		<div class="nav-container">
+			<a href="index">
+				<img src="{% static 'img/logo.png' %}" alt="VIP Logo" style="height:65px;">
+			</a>
+			<div class="hamburger" onclick="toggleMenu()">
+				<i class="fas fa-bars"></i>
+			</div>
+
+			<ul id="nav-links" class="nav-links">
+				<li><a href="index">Home</a></li>
+
+				<!-- Services Dropdown -->
+				<li>
+					<a href="#">Services <i class="fas fa-caret-down"></i></a>
+					<ul class="dropdown">
+						<li><a href="limo-hire-services">LIMO HIRE SERVICES</a></li>
+						<li><a href="weddingcarhire">WEDDING CARS</a></li>
+						<li><a href="PROMLIMO">PROM LIMOS</a></li>
+						<li><a href="KIDSLIMOPARTIES">KIDS LIMO PARTIES</a></li>
+						<li><a href="SPECIALOCCASIONLIMOHIRE">SPECIAL OCCASION LIMO HIRE</a></li>
+						<li><a href="ROYALASCOTLIMOHIRE">ROYAL ASCOT LIMO HIRE</a></li>
+						<li><a href="ROYALASCOTLIMOHIRE">High School Dances</a></li>
+						<li><a href="ROYALASCOTLIMOHIRE">Night Outs</a></li>
+						<li><a href="ROYALASCOTLIMOHIRE">Holiday Light Tours</a></li>
+					</ul>
+				</li>
+
+				<!-- Areas We Serve Dropdown -->
+				<li>
+					<a href="#">Areas We Serve <i class="fas fa-caret-down"></i></a>
+					<ul class="dropdown" style="max-height: 200px; overflow-y: auto;">
+						<li><a href="AtlantaGeorgia">Atlanta Georgia</a></li>
+						<li><a href="AlexandriaVA">Alexandria, VA</a></li>
+						<li><a href="ArlingtonTexas">Arlington Texas</a></li>
+						<li><a href="BaltimoreMD">Baltimore, MD</a></li>
+						<li><a href="BostonMA">Boston, MA</a></li>
+						<li><a href="CharlotteNC">Charlotte, NC</a></li>
+						<li><a href="ClevelandOH">Cleveland, OH</a></li>
+						<li><a href="ChicagoIL">Chicago, IL</a></li>
+						<li><a href="Dallas">Dallas, TX</a></li>
+						<li><a href="FortMyersFL">Fort Myers, FL</a></li>
+						<li><a href="HoustonTX">Houston, TX</a></li>
+
+						<li><a href="SanFranciscoCA">San Francisco, CA</a></li>
+						<li><a href="SacramentoCA">Sacramento, CA</a></li>
+						<li><a href="phoenix">Phoenix</a></li>
+						<li><a href="PittsburghPA">Pittsburgh, PA</a></li>
+						<li><a href="Philadelphia">Philadelphia, PA</a></li>
+						<li><a href="LasVegasNV">Las Vegas, NV</a></li>
+						<li><a href="LosAngelesCA">Los Angeles,CA</a></li>
+						<li><a href="MiamiFL">Miami, FL</a></li>
+						<li><a href="NewYorkCity">New York City, NY</a></li>
+
+						<li><a href="TampaFL">Tampa, FL</a></li>
+						<li><a href="Washington">Washington DC</a></li>
+					</ul>
+				</li>
+
+				<!-- Fleet Dropdown -->
+				<li>
+					<a href="#">Fleet <i class="fas fa-caret-down"></i></a>
+					<ul class="dropdown">
+						<li><a href="fleet">4 SEATS LUXURY SEDAN</a></li>
+						<li><a href="fleet">6 SEATS LUXURY SUV</a></li>
+						<li><a href="fleet">8 to 10 SEATS LIMO</a></li>
+						<li><a href="fleet">13 SEATS SPRINTER VAN</a></li>
+						<li><a href="fleet">14 SEATS STARCH LIMO</a></li>
+						<li><a href="fleet">20 TO 26 SEATS PARTY BUS</a></li>
+						<li><a href="fleet">36 SEATS COACH BUS</a></li>
+						<li><a href="fleet">40 SEATS PARTY BUS</a></li>
+						<li><a href="fleet">55 SEATS COACH BUS</a></li>
+					</ul>
+				</li>
+
+				<li><a href="reservation">Reservation</a></li>
+				<li><a href="contact">Contact</a></li>
+				<li><a href="offers">Offers</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<!-- Hero -->
+	<section class="hero">
+		<h1>Dallas TX, GEORGIA</h1>
+		<p>Vip limo's Service is your premier choice for luxury transportation in Dallas TX, Georgia, and the
+			surrounding
+			area.</p>
+	</section>
+
+	<!-- Content -->
+	<!-- Additional Content Sections -->
+	<section class="content-section">
+		<!-- Weddings and Anniversaries -->
+		<div class="text-block">
+			<h2>VIP CLASS Limo services</h2>
+			<p>In Dallas TX, Georgia, VIP Class Limo's Service offers first-rate luxury transportation services for a
+				variety of parties and occasions. We are the go-to choice for both locals and tourists due to our
+				dedication to excellence, safety, and customer satisfaction. We provide a selection of vehicles,
+				including opulent limos, vintage automobiles, and roomy SUVs, to meet your demands</p>
+			<p>A safe, relaxing, and enjoyable transportation experience is guaranteed by our educated, courteous, and
+				punctual professional drivers. Experience the pinnacle of luxury transportation by scheduling your trip
+				with VIP Class Limo's Service right away. To help make your big day unique, we provide a variety of
+				luxurious transportation choices, including classy limos, vintage automobiles, and roomy SUVs.vehicles,
+				including opulent limos, vintage automobiles, and roomy SUVs, to meet your demands</p>
+		</div>
+		<div class="image-block">
+			<img src="{% static 'dallas.png' %}" alt="Wedding Limo">
+		</div>
+
+		<!-- Corporate Events -->
+		<div class="text-block">
+			<h2>Corporate Events and Conferences</h2>
+			<p>VIP Class Limo's & Car Service is a top choice for business events in Dallas TX. Our professional drivers
+				and punctual service make us a reliable partner for airport transfers, conference shuttles, and
+				executive transport.</p>
+		</div>
+		<!-- <div class="image-block">
+    <img src="{% static 'images/corporate.jpg' %}" alt="Corporate Event Limo">
+  </div> -->
+
+		<!-- Birthdays and Milestones -->
+		<div class="text-block">
+			<h2>Birthday and Milestone Celebrations</h2>
+			<p>Looking to make a grand entrance for your birthday? VIP Class Limo's has the perfect vehicles to turn
+				heads. Enjoy a luxurious ride with your friends and family and make memories that last a lifetime.</p>
+		</div>
+		<!-- <div class="image-block">
+    <img src="{% static 'images/birthday.jpg' %}" alt="Birthday Party Limo">
+  </div> -->
+
+		<!-- Gala Dinners and Awards -->
+		<div class="text-block">
+
+			<h2>Weddings and Anniversaries</h2>
+			<p>In Dallas TX, Georgia, VIP Class Limo's & Car Service is a well-liked option for weddings and
+				anniversaries. They will work with you to make sure that your wedding day transportation is as flawless
+				and stress-free as is humanly possible because they are renowned for their attention to detail,
+				dependability, and great customer service. VIP Class Limos is the perfect choice if you want the bride
+				and groom to arrive in style or if you need transportation for the wedding party.</p>
+		</div>
+		<div class="image-block">
+			<img src="{% static 'wedding_limo.png' %}" alt="Gala Event Limo">
+		</div>
+
+		<!-- Community and Charity Events -->
+		<div class="text-block">
+			<h2>Community and Charity Events</h2>
+			<p>In Dallas TX, Georgia, VIP Class Limo's & Car Service is a well-liked option for civic and charitable
+				activities. Our skilled drivers offer a secure and relaxing ride, and they will collaborate with you to
+				develop a special itinerary that satisfies your particular needs. The best option for your upcoming
+				civic or charitable event is our service.</p>
+		</div>
+		<!-- <div class="image-block">
+    <img src="{% static 'images/charity.jpg' %}" alt="Community Event Limo">
+  </div> -->
+	</section>
+
+
+	<!-- Footer -->
+	<footer>
+		<div class="footer-top">
+			<div class="content-section">
+				<div class="text-block">
+					<h2>WE ARE SOCIAL</h2>
+					<p>Follow us on Facebook, Instagram, or LinkedIn. Stay updated with latest limo deals, services and
+						news.</p>
+				</div>
+				<div class="text-block">
+					<h2>CLIENT FEEDBACK</h2>
+					<p>"Excellent Service! As usual, your attention to detail and service is truly exceptional." —
+						Bernadette Miller</p>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			&copy; © 2023 VIP CLASS LIMO'S
+		</div>
+	</footer>
+	<script>
+		function toggleMenu() {
+			const menu = document.getElementById("nav-links");
+			menu.classList.toggle("show");
+		}
+	</script>
+
+</body>
+
+</html>
